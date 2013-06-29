@@ -6,8 +6,18 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*"
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "directories": {
+    "test": "test"
   },
   "scripts": {
-    "test": "mocha --no-colors --reporter spec"
-  }
+    "test": "mocha --recursive -R spec test",
+    "coverage": "mkdir -p ./target; rm ./target/coverage.html; mocha -R html-cov test/coverage > ./target/coverage.html"
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "",
+  "license": ""
 }
