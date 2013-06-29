@@ -5,7 +5,7 @@
   "main": "<%= moduleFileName %>",
   "devDependencies": {
     "chai": "*",
-    "mocha": "*"
+    "mocha": "*",
     "sinon": "*",
     "sinon-chai": "*"
   },
